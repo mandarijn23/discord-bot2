@@ -31,7 +31,7 @@ async def on_ready():
 async def daily_post():
     now = datetime.datetime.now(CENTRAL)
 
-    if now.hour == 12 and now.minute == 0:
+    if now.hour == 01 and now.minute == 11:
         channel = bot.get_channel(CHANNEL_ID)
 
         if channel:
@@ -51,3 +51,4 @@ async def daily_post():
             )
 
 bot.run(TOKEN)
+
